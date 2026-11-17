@@ -2008,3 +2008,28 @@ address { font-style: normal; }
 
 .not-found .btn--ghost { color: var(--navy); border-color: rgba(11, 24, 38, 0.22); }
 .not-found .btn--ghost:hover { color: var(--white); background: var(--navy); border-color: var(--navy); }
+
+/* Fallback sem JavaScript */
+.no-js .nav-toggle { display: none; }
+@media (max-width: 1180px) {
+  .no-js .site-header__inner { flex-wrap: wrap; row-gap: 8px; padding-top: 14px; padding-bottom: 14px; }
+  .no-js .main-nav {
+    position: static;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+  .no-js .main-nav__list { flex-direction: row; flex-wrap: wrap; gap: 18px; }
+  .no-js .main-nav__list li { border: 0; }
+  .no-js .main-nav__list a { padding: 4px 0; font-family: var(--sans); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .no-js .main-nav__cta { margin-top: 4px; }
+}
