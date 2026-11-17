@@ -2005,3 +2005,6 @@ address { font-style: normal; }
   .alert-bar p { font-size: 11px; line-height: 1.45; }
   .alert-bar__inner { padding-top: 10px; padding-bottom: 10px; }
 }
+
+.not-found .btn--ghost { color: var(--navy); border-color: rgba(11, 24, 38, 0.22); }
+.not-found .btn--ghost:hover { color: var(--white); background: var(--navy); border-color: var(--navy); }
